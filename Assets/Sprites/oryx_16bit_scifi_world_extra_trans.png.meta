@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,805 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 115
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9af090fe341fe140a8deea3d6c419f8
+      internalID: -1424644235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 115
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ad1f1ad88dce04c8be86a113c36137
+      internalID: -1582061932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 115
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f312c5221d7cb064b9ad058438fa23a6
+      internalID: 233905134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 115
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795eb686e35c1bd4fbd1ec8c8e210cbf
+      internalID: -1381841730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 115
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83489c47e84424f459722fe6e9912e92
+      internalID: -675479727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 115
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85015e769fb2a4f478ca38f89a4cf12b
+      internalID: -496391765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_6
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 112
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27978b5ebeb64743b7ef8ef07974f3d
+      internalID: 1649321507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 116
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ba0a10e78ec9d47b986a0dabe97e82
+      internalID: -2057492270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 112
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8cf8f881b32934b9034d62377a2ef8
+      internalID: 362057620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_9
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 116
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b22fc203a089714992af03648056041
+      internalID: 1125090457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a72c9071db1be49a0c42e6d0d3f272
+      internalID: 1969421703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d5c13e753661744b6e82f86971a4ec
+      internalID: -1717845934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 74
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6e922f0404d2f49867b63abbba23c6
+      internalID: -1868063821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 74
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1b9aa09fc81014caa738301130afae
+      internalID: 702332138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_14
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36619851c8d8ecf4d9fd95b10c96b902
+      internalID: -180394070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_15
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 74
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dddf944d42744c4dbe1b98045274d10
+      internalID: 1472416541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 120
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c031e4e388d37f44a95306ec98c59d1
+      internalID: 1632564174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 34
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9387fac1b0cc42e4b8779597ff517515
+      internalID: 1168370694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 34
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b09a19611d166145911a978f6ecf472
+      internalID: 215787087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 35
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815ea909c4a92ed4eb42ac82ecb8e504
+      internalID: 609829212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435db21340fb3c34ab1458881cbb8c84
+      internalID: 998119955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 34
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9714b1c3cf0304419903fa73739f2e0
+      internalID: 1491115690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_22
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b7f5286f8bab0448f3a8b5faacbb75
+      internalID: 550656710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_23
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 24
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf4f67eec6da854e86bf8f58603fb84
+      internalID: -994713860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_24
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 26
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a3e6dc3e2283b4a86a9aa60f8143cc
+      internalID: -1203498685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_25
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 34
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3348a8b6890b745a5549291cd9d97c
+      internalID: 1252006266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 26
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c5651217988a8429c854d3f989a448
+      internalID: 1850725543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_27
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 26
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09076a52d5be690438c53a9f1dc302e4
+      internalID: -1157965965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_28
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 25
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc35372fd0a01334a9bcbb267b547bce
+      internalID: -1060663925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_29
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 26
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72042084a5c94a14a83d42947a9563f6
+      internalID: 225319772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 25
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7033d5a0250255543a85308af57ed188
+      internalID: -89368703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_31
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 27
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3367ad75393f769448f84f08190b6701
+      internalID: -922020895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_32
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 25
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0644d2ee9b1f52743878b54d86d6db63
+      internalID: 1438694054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_33
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 26
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d40662286ad8354bb60010ccb5fabcb
+      internalID: 1957985278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_34
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 8
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8487d4f33ce397844ac7850054427784
+      internalID: -1448749558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_35
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 8
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de36a828268d1e4dae579691387eef8
+      internalID: -835536419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_36
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 8
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8bbc2b399a091449b0c78f06cffc3e
+      internalID: 688043676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oryx_16bit_scifi_world_extra_trans_37
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 9
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d662c00c93872f84c92c986173b6fcd2
+      internalID: -267174965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +926,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oryx_16bit_scifi_world_extra_trans_8: 362057620
+      oryx_16bit_scifi_world_extra_trans_14: -180394070
+      oryx_16bit_scifi_world_extra_trans_10: 1969421703
+      oryx_16bit_scifi_world_extra_trans_25: 1252006266
+      oryx_16bit_scifi_world_extra_trans_9: 1125090457
+      oryx_16bit_scifi_world_extra_trans_27: -1157965965
+      oryx_16bit_scifi_world_extra_trans_20: 998119955
+      oryx_16bit_scifi_world_extra_trans_12: -1868063821
+      oryx_16bit_scifi_world_extra_trans_2: 233905134
+      oryx_16bit_scifi_world_extra_trans_13: 702332138
+      oryx_16bit_scifi_world_extra_trans_35: -835536419
+      oryx_16bit_scifi_world_extra_trans_26: 1850725543
+      oryx_16bit_scifi_world_extra_trans_22: 550656710
+      oryx_16bit_scifi_world_extra_trans_11: -1717845934
+      oryx_16bit_scifi_world_extra_trans_37: -267174965
+      oryx_16bit_scifi_world_extra_trans_7: -2057492270
+      oryx_16bit_scifi_world_extra_trans_19: 609829212
+      oryx_16bit_scifi_world_extra_trans_0: -1424644235
+      oryx_16bit_scifi_world_extra_trans_24: -1203498685
+      oryx_16bit_scifi_world_extra_trans_23: -994713860
+      oryx_16bit_scifi_world_extra_trans_1: -1582061932
+      oryx_16bit_scifi_world_extra_trans_5: -496391765
+      oryx_16bit_scifi_world_extra_trans_32: 1438694054
+      oryx_16bit_scifi_world_extra_trans_18: 215787087
+      oryx_16bit_scifi_world_extra_trans_3: -1381841730
+      oryx_16bit_scifi_world_extra_trans_33: 1957985278
+      oryx_16bit_scifi_world_extra_trans_31: -922020895
+      oryx_16bit_scifi_world_extra_trans_30: -89368703
+      oryx_16bit_scifi_world_extra_trans_36: 688043676
+      oryx_16bit_scifi_world_extra_trans_4: -675479727
+      oryx_16bit_scifi_world_extra_trans_28: -1060663925
+      oryx_16bit_scifi_world_extra_trans_34: -1448749558
+      oryx_16bit_scifi_world_extra_trans_16: 1632564174
+      oryx_16bit_scifi_world_extra_trans_15: 1472416541
+      oryx_16bit_scifi_world_extra_trans_17: 1168370694
+      oryx_16bit_scifi_world_extra_trans_21: 1491115690
+      oryx_16bit_scifi_world_extra_trans_6: 1649321507
+      oryx_16bit_scifi_world_extra_trans_29: 225319772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
