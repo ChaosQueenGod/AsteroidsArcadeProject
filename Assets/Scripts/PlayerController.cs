@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private PlayerInput playerinput;
     private Vector2 moveInput;
     private Rigidbody2D rb;
+    Vector2 mousePos = new Vector3();
 
     private void Awake()
     {
@@ -22,18 +23,35 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 movement = new Vector2(moveInput.x * speed, moveInput.y * speed);
-        rb.velocity = transform.TransformDirection(movement);
-        //gameObject.transform.LookAt(Camera.main.ViewportToScreenPoint(Input.mousePosition)); //lookat is acting weird, im probably passing it a bad position. maybe need to pass it specific positions and only take the x and z value from mouse.
+        rb.velocity = new Vector2(moveInput.x * speed, moveInput.y * speed); //move player
+
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //fetch mouse position for shooting and aiming
+        
+        LookAtMouse();
+
+        
+    }
+
+    private void LookAtMouse()
+    {
+        Vector2 lookAt = mousePos;
+        float AngleRad = Mathf.Atan2(lookAt.y - transform.position.y, lookAt.x - transform.position.x); //get tangent angle between player and mouse position
+
+        float AngleDeg = (180 / Mathf.PI) * AngleRad; //multiply by 180 over pi to calculate degrees instead of radians
+
+        transform.rotation = Quaternion.Euler(0, 0, AngleDeg); //set rotation to look at mouse
     }
 
     void OnMove(InputValue input)
     {
-        moveInput = input.Get<Vector2>();
+        moveInput = input.Get<Vector2>(); //get input from input system
     }
     void OnShoot(InputValue input)
     {
-
+        //mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //mousePos.z = 0;
+        //gun.Shoot((Vector2)mousePos - (Vector2)transform.position);
+        //Debug.Log("pew"); 
     }
     void OnHyperspace(InputValue input)
     {
