@@ -4118,6 +4118,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5350465163503765730, guid: 677891721a0270e41863c41e36bb55de, type: 3}
+      propertyPath: deathPanel
+      value: 
+      objectReference: {fileID: 1081945951}
+    - target: {fileID: 5350465163503765730, guid: 677891721a0270e41863c41e36bb55de, type: 3}
       propertyPath: enemy.m_Bits
       value: 8
       objectReference: {fileID: 0}

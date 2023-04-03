@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -50,12 +51,12 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, AngleDeg); //set rotation to look at mouse
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag != "PlayerBullet")
+        if (collision.gameObject.CompareTag("Asteroid"))
         {
             currentLives--;
-            if(currentLives <= 0)
+            if (currentLives <= 0)
             {
                 deathPanel.SetActive(true);
                 return;
@@ -64,7 +65,6 @@ public class PlayerController : MonoBehaviour
             rb.MovePosition(PickSafePosition());
         }
     }
-
     Vector2 PickSafePosition()
     {
         float width = gameObject.GetComponent<PolygonCollider2D>().bounds.size.x;
@@ -84,6 +84,8 @@ public class PlayerController : MonoBehaviour
     //Button Controllers
     public void ResetGame()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        /*
         deathPanel.SetActive(false);
         foreach(GameObject life in lifeSprites)
         {
@@ -91,6 +93,7 @@ public class PlayerController : MonoBehaviour
         }
         currentLives = maxLives;
         rb.MovePosition(PickSafePosition());
+        */
     }
 
     public void OnQuitButtonClick()

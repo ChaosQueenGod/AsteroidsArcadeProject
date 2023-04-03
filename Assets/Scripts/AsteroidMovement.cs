@@ -24,6 +24,7 @@ public class AsteroidMovement : MonoBehaviour
     private void FixedUpdate()
     {
         transform.position += direction * speed * Time.deltaTime;
+        CheckOutOfBounds();
     }
 
     private void Setup()
@@ -74,11 +75,45 @@ public class AsteroidMovement : MonoBehaviour
         }
     }
 
+    private void CheckOutOfBounds()
+    {
+
+        if (transform.position.x <= -10)
+        {
+            float randomY = Random.Range(5.5f, -5.5f);
+            transform.position = new Vector3(9.5f, randomY, transform.position.z);
+        }
+
+        if(transform.position.x >= 10)
+        {
+            float randomY = Random.Range(5.5f, -5.5f);
+            transform.position = new Vector3(-9.5f, randomY, transform.position.z);
+        }
+
+        if(transform.position.y <= -6)
+        {
+            float randomX = Random.Range(-9.5f, 9.5f);
+            transform.position = new Vector3(randomX, 5.5f, transform.position.z);
+        }
+
+        if (transform.position.y >= 6)
+        {
+            float randomX = Random.Range(-9.5f, 9.5f);
+            transform.position = new Vector3(randomX, -5.5f, transform.position.z);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             BreakAsteroid();
+        }
+
+        if(collision.CompareTag("PlayerBullet"))
+        {
+            BreakAsteroid();
+            Destroy(collision.gameObject);
         }
     }
 

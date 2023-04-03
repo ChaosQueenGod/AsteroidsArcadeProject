@@ -6,10 +6,12 @@ using UnityEngine.UIElements;
 
 public class AsteroidSpawner : MonoBehaviour
 {
-    
     private List<Transform> asteroids = new List<Transform>();
+    private List<Transform> activeAsteroids = new List<Transform>();
+    private int spawnNum = 5;
+    private bool isSpawning = false;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         foreach (Transform obj in gameObject.transform)
@@ -20,7 +22,16 @@ public class AsteroidSpawner : MonoBehaviour
 
         StartSpawning();
     }
-    
+
+    private void FixedUpdate()
+    {
+        if(activeAsteroids.Count <= 0 && !isSpawning)
+        {
+            isSpawning = true;
+            StartSpawning();
+        }
+    }
+
     //Spawn new asteroids with different sizes and speeds
     public void SpawnAsteroid(GameObject brokenAsteroid)
     {
@@ -39,10 +50,10 @@ public class AsteroidSpawner : MonoBehaviour
         //Check if this is a fresh asteroid or not by checking the attached class of the gameObject parameter that was passed
         if(brokenAsteroid.GetComponent<AsteroidMovement>())
         {
-            //Asteroid is being spawned since the previous one was destroyed
+            //Smaller asteroid being spawned since the previous one was destroyed
             newAsteroid.transform.position = brokenAsteroid.transform.position;
             newAsteroid.GetComponent<AsteroidMovement>().asteroidSize = brokenAsteroid.GetComponent<AsteroidMovement>().asteroidSize - 1;
-            newAsteroid.GetComponent<AsteroidMovement>().speed = brokenAsteroid.GetComponent<AsteroidMovement>().speed + 1;
+            newAsteroid.GetComponent<AsteroidMovement>().speed = brokenAsteroid.GetComponent<AsteroidMovement>().speed + 2;
         }
         else
         {
@@ -76,24 +87,29 @@ public class AsteroidSpawner : MonoBehaviour
             }
 
         }
-        
+
+        activeAsteroids.Add(newAsteroid.transform);
         newAsteroid.SetActive(true);
     }
 
     public void RemoveAsteroid(GameObject brokenAsteroid)
     {
+        //Default asteroid settings
         brokenAsteroid.GetComponent<AsteroidMovement>().asteroidSize = 2;
         brokenAsteroid.GetComponent<AsteroidMovement>().speed = 2;
+        activeAsteroids.Remove(brokenAsteroid.transform);
         brokenAsteroid.SetActive(false);
     }
-    
 
     private void StartSpawning()
     {
-        SpawnAsteroid(gameObject);
-        SpawnAsteroid(gameObject);
-        SpawnAsteroid(gameObject);
-        SpawnAsteroid(gameObject);
-        SpawnAsteroid(gameObject);
+        //Increases the amount of asteroids spawned as the game goes on
+        for(int i = 0; i < spawnNum; i++)
+        {
+            SpawnAsteroid(gameObject);
+        }
+
+        spawnNum = spawnNum + 1;
+        isSpawning = false;
     }
 }
