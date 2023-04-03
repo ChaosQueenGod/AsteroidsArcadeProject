@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class AsteroidSpawner : MonoBehaviour
 {
+    [SerializeField] bool isMenu = false;
+
     private List<Transform> asteroids = new List<Transform>();
     private List<Transform> activeAsteroids = new List<Transform>();
     private int spawnNum = 5;
@@ -21,6 +23,11 @@ public class AsteroidSpawner : MonoBehaviour
         }
 
         StartSpawning();
+
+        if(isMenu)
+        {
+            BreakMenuAsteroids();
+        }
     }
 
     private void FixedUpdate()
@@ -53,7 +60,7 @@ public class AsteroidSpawner : MonoBehaviour
             //Smaller asteroid being spawned since the previous one was destroyed
             newAsteroid.transform.position = brokenAsteroid.transform.position;
             newAsteroid.GetComponent<AsteroidMovement>().asteroidSize = brokenAsteroid.GetComponent<AsteroidMovement>().asteroidSize - 1;
-            newAsteroid.GetComponent<AsteroidMovement>().speed = brokenAsteroid.GetComponent<AsteroidMovement>().speed + 2;
+            newAsteroid.GetComponent<AsteroidMovement>().speed = brokenAsteroid.GetComponent<AsteroidMovement>().speed + 1.3f;
         }
         else
         {
@@ -111,5 +118,22 @@ public class AsteroidSpawner : MonoBehaviour
 
         spawnNum = spawnNum + 1;
         isSpawning = false;
+    }
+
+
+    //Functions that only apply while in the menu
+    private void BreakMenuAsteroids()
+    {
+        for(int i = 0; i < 5; i++)
+        {
+            BreakAsteroid();
+        }
+    }
+
+    private void BreakAsteroid()
+    {
+        GameObject chosenAsteroid = activeAsteroids[Random.Range(0, activeAsteroids.Count)].gameObject;
+        SpawnAsteroid(chosenAsteroid);
+        RemoveAsteroid(chosenAsteroid);
     }
 }

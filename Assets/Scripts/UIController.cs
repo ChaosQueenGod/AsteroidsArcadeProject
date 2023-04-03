@@ -15,6 +15,11 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void OnClickReplay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void OnClickQuit()
     {
         print("Quitting...");

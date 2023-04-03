@@ -80,7 +80,7 @@ Transform:
   m_Children:
   - {fileID: 7312314746457214171}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5350465163503765730
 MonoBehaviour:
@@ -99,7 +99,13 @@ MonoBehaviour:
   fieldWidth: 3.9
   enemy:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  maxLives: 3
+  lifeSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  deathPanel: {fileID: 0}
 --- !u!212 &5350465163503765734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -178,7 +184,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &5350465163503765728
 MonoBehaviour:
   m_ObjectHideFlags: 0

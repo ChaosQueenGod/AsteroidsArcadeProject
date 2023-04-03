@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int maxLives = 3;
     [SerializeField] GameObject[] lifeSprites;
     [SerializeField] GameObject deathPanel;
+    [SerializeField] ScoreController scoreController;
 
     private PlayerInput playerinput;
     private Vector2 moveInput;
@@ -53,12 +54,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Asteroid"))
+        if (collision.gameObject.CompareTag("Asteroid") || collision.gameObject.CompareTag("EnemyBullet"))
         {
             currentLives--;
             if (currentLives <= 0)
             {
                 deathPanel.SetActive(true);
+                scoreController.PauseScore();
                 return;
             }
             lifeSprites[currentLives].SetActive(false);

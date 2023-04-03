@@ -6,15 +6,20 @@ using UnityEngine;
 public class ScoreController : MonoBehaviour
 {
     [SerializeField] TMP_Text[] scoreTexts;
+    private bool gameOver = false;
 
     private int playerScore = 0;
     public void AddToScore(int pointsToAdd)
     {
-        playerScore += pointsToAdd;
-        foreach(TMP_Text text in scoreTexts)
+        if(!gameOver)
         {
-            text.text = playerScore.ToString();
+            playerScore += pointsToAdd;
+            foreach (TMP_Text text in scoreTexts)
+            {
+                text.text = playerScore.ToString();
+            }
         }
+        
     }
 
     public void ResetScore()
@@ -25,4 +30,11 @@ public class ScoreController : MonoBehaviour
             text.text = playerScore.ToString();
         }
     }
+
+    public void PauseScore()
+    {
+        gameOver = true;
+    }
+
+
 }

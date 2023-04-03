@@ -10,10 +10,12 @@ public class AsteroidMovement : MonoBehaviour
     private Vector3 direction;
     private Rigidbody2D rb;
     private AsteroidSpawner asteroidSpawner;
+    private ScoreController scoreController;
 
     private void Start()
     {
         asteroidSpawner = transform.parent.GetComponent<AsteroidSpawner>();
+        scoreController = GameObject.FindGameObjectWithTag("ScoreController").GetComponent<ScoreController>();
     }
 
     private void OnEnable()
@@ -57,16 +59,19 @@ public class AsteroidMovement : MonoBehaviour
         switch (asteroidSize)
         {
             case 2:
+                scoreController.AddToScore(50);
                 asteroidSpawner.SpawnAsteroid(gameObject);
                 asteroidSpawner.SpawnAsteroid(gameObject);
                 asteroidSpawner.RemoveAsteroid(gameObject);
                 break;
             case 1:
+                scoreController.AddToScore(100);
                 asteroidSpawner.SpawnAsteroid(gameObject);
                 asteroidSpawner.SpawnAsteroid(gameObject);
                 asteroidSpawner.RemoveAsteroid(gameObject);
                 break;
             case 0:
+                scoreController.AddToScore(200);
                 asteroidSpawner.RemoveAsteroid(gameObject);
                 break;
             default:

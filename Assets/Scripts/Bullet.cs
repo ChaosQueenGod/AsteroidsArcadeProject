@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed = 8.0f;
-    [SerializeField] float destroyTime = 3.0f;
+    [SerializeField] float destroyTime = 2f;
     private Vector2 direction;
     private float timer;
     
