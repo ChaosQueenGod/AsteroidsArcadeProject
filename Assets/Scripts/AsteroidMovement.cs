@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//////////////////////////////////////////////
+//Assignment/Lab/Project: Arcade Project
+//Name: Joel Hill
+//Section: 2023SP.SGD.285.4171
+//Instructor: Aurore Locklear
+//Date: 4/3/2023
+/////////////////////////////////////////////
+
 public class AsteroidMovement : MonoBehaviour
 {
     public float speed = 2.0f;

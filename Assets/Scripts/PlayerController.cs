@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+//////////////////////////////////////////////
+//Assignment/Lab/Project: Arcade Project
+//Name: James Deglow
+//Section: 2023SP.SGD.285.4171
+//Instructor: Aurore Locklear
+//Date: 4/3/2023
+/////////////////////////////////////////////
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float speed = 5.0f;
